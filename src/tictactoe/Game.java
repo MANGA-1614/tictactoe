@@ -1,7 +1,5 @@
 package tictactoe;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Game {
@@ -67,7 +65,7 @@ public class Game {
 		boolean taken = false;
 		
 		do {
-			System.out.println("Enter number to place a piece:");
+			System.out.printf("Player [%s]: Enter number to place a piece:", player.getChar());
 			spotID = sc.nextInt();
 			
 			if ((spotID < 1) || (9 < spotID)) {

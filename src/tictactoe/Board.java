@@ -21,7 +21,11 @@ public class Board {
 	}
 	
 	public void printBoard() {
+		System.out.println();
 		for (int i = 1; i < 10; i++) {
+			if ((i == 1) || (i == 4) || (i == 7)) {
+				System.out.print("  ");
+			}
 			System.out.print(this.board.get(i - 1).getName());
 			if ((i % 3) != 0) {
 				System.out.print(" | ");
@@ -29,7 +33,7 @@ public class Board {
 				System.out.println();
 				
 				if (i != 9) {
-					System.out.println("- + - + -");
+					System.out.println("  - + - + -");
 				}
 			}
 		}
