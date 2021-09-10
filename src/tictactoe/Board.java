@@ -3,7 +3,7 @@ package tictactoe;
 import java.util.ArrayList;
 
 public class Board {
-	ArrayList<Spot> board = new ArrayList<Spot>();
+	private ArrayList<Spot> board = new ArrayList<Spot>();
 	
 	public void add(Spot s) {
 		this.board.add(s);
