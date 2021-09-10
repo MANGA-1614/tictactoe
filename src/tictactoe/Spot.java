@@ -26,6 +26,10 @@ public class Spot {
 		return this.id;
 	}
 	
+	public Piece getPiece() {
+		return this.piece;
+	}
+	
 	public boolean checkIfTaken() {
 		if (this.taken) {
 			return true;
